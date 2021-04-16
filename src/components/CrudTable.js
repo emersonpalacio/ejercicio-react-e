@@ -9,7 +9,7 @@ export default function CrudTable({ data, setDataToEdit, deleteData }) {
       <table>
         <thead>
           <tr>
-            <th>PrimerApellido</th>
+            {/* <th>PrimerApellido</th>
             <th>SegundoApellido</th>
             <th>PrimerNombre</th>
             <th>OtroNombre</th>
@@ -21,7 +21,7 @@ export default function CrudTable({ data, setDataToEdit, deleteData }) {
             <th>FeachaRegistro</th>
             <th>Area</th>
             <th>Estado</th>
-            <th>Acciones</th>
+            <th>Acciones</th> */}
           </tr>
         </thead>
         <tbody>
