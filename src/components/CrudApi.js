@@ -6,14 +6,14 @@ import CrudTable from "./CrudTable";
 import Loader from "./Loader";
 import Message from "./Message";
 
-export default function CrudApi() {
+const CrudApi = () => {
   const [db, setDb] = useState(null);
   const [dataToEdit, setDataToEdit] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
   let api = helpHttp();
-  let url = "http://localhost:5000/santos"; //mi enpoint
+  let url = " http://localhost:5000/santos"; //mi enpoint
 
   //se ejecuta la primera vez unicamente
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function CrudApi() {
     helpHttp()
       .get(url)
       .then((res) => {
-        //console.log(res);
+        console.log(res);
         if (!res.err) {
           setDb(res);
           setError(null);
@@ -35,13 +35,13 @@ export default function CrudApi() {
 
   const createData = (data) => {
     data.id = Date.now();
-    //console.log(data);
+    console.log(data);
     let options = {
       body: data,
       headers: { "content-type": "application/json" },
     };
     api.post(url, options).then((res) => {
-      // console.log(res);
+      console.log(res);
       if (!res.err) {
         setDb([...db, res]);
       } else {
@@ -119,4 +119,6 @@ export default function CrudApi() {
       </article>
     </div>
   );
-}
+};
+
+export default CrudApi;

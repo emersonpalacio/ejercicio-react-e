@@ -14,6 +14,36 @@
       "FeachaRegistro": "2021-01-01",
       "Area": "programacion",
       "Estado": "Activo"
+    },
+    {
+      "id": 1618603894158,
+      "PrimerApellido": "",
+      "SegundoApellido": "",
+      "PrimerNombre": "",
+      "OtroNombre": "",
+      "PaisDelEmpleo": "",
+      "TipoIdentificacion": "",
+      "NumeroIdentifiacion": "",
+      "CorreoElectronico": "",
+      "FechaIngreso": "",
+      "FeachaRegistro": "",
+      "Area": "",
+      "Estado": ""
+    },
+    {
+      "id": 1618611429058,
+      "PrimerApellido": "dfds",
+      "SegundoApellido": "fdsfsd",
+      "PrimerNombre": "fdsfsd",
+      "OtroNombre": "fdsfsd",
+      "PaisDelEmpleo": "fdsfsdf",
+      "TipoIdentificacion": "fdsfsd",
+      "NumeroIdentifiacion": "fdsfsd",
+      "CorreoElectronico": "emmanuelpalacio1@gmail.com",
+      "FechaIngreso": "fsdfsd",
+      "FeachaRegistro": "fdsfsd",
+      "Area": "fsdfsd",
+      "Estado": ""
     }
   ]
 }

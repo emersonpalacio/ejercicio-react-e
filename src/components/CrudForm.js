@@ -22,13 +22,13 @@ export default function CrudForm({
   dataToEdit,
   setDataToEdit,
 }) {
-  const [form, setForm] = useState([]);
+  const [form, setForm] = useState(initialForm);
 
   useEffect(() => {
     if (dataToEdit) {
       setForm(dataToEdit);
     } else {
-      setForm([]);
+      setForm(initialForm);
     }
   }, [dataToEdit]);
 
@@ -63,11 +63,14 @@ export default function CrudForm({
     <div>
       <h3>{dataToEdit ? "Editar" : "Agregar"}</h3>
       <form onSubmit={handleSubmit}>
+        <input type="submit" bvalue="Enviar" />
+        <input type="reset" value="Limpiar" onClick={handleReset} />
+
         <input
           onChange={handleChange}
           value={form.PrimerApellido}
           type="text"
-          name="primerApellido"
+          name="PrimerApellido"
           placeholder="Primer Apellido"
         />
 
@@ -75,7 +78,7 @@ export default function CrudForm({
           onChange={handleChange}
           value={form.SegundoApellido}
           type="text"
-          name="segundoApellido"
+          name="SegundoApellido"
           placeholder="Segundo Apellido"
         />
 
@@ -83,7 +86,7 @@ export default function CrudForm({
           onChange={handleChange}
           value={form.PrimerNombre}
           type="text"
-          name="primerNombre"
+          name="PrimerNombre"
           placeholder="Primer Nombre"
         />
 
@@ -91,7 +94,7 @@ export default function CrudForm({
           onChange={handleChange}
           value={form.OtroNombre}
           type="text"
-          name="otroNombre"
+          name="OtroNombre"
           placeholder="Otro Nombre"
         />
 
@@ -99,7 +102,7 @@ export default function CrudForm({
           onChange={handleChange}
           value={form.PaisDelEmpleo}
           type="text"
-          name="paisDelEmpleo"
+          name="PaisDelEmpleo"
           placeholder="Pais Del Empleo"
         />
 
@@ -107,7 +110,7 @@ export default function CrudForm({
           onChange={handleChange}
           value={form.TipoIdentificacion}
           type="text"
-          name="tipoIdentificacion"
+          name="TipoIdentificacion"
           placeholder="Tipo de identificacion"
         />
 
@@ -115,7 +118,7 @@ export default function CrudForm({
           onChange={handleChange}
           value={form.NumeroIdentifiacion}
           type="text"
-          name="numeroIdentifiacion"
+          name="NumeroIdentifiacion"
           placeholder="Numero Identifiacion"
         />
 
@@ -139,7 +142,7 @@ export default function CrudForm({
           onChange={handleChange}
           value={form.FeachaRegistro}
           type="text"
-          name="feachaRegistro"
+          name="FeachaRegistro"
           placeholder="Feacha Registro"
         />
 
@@ -147,11 +150,9 @@ export default function CrudForm({
           onChange={handleChange}
           value={form.Area}
           type="text"
-          name="area"
+          name="Area"
           placeholder="Area"
         />
-        <input type="submit" bvalue="Enviar" />
-        <input type="reset" value="Limpiar" onClick={handleReset} />
       </form>
     </div>
   );
