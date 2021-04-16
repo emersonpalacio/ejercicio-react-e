@@ -1,33 +1,19 @@
 {
-    "santos":[
-      { 
-        "id": 1,
-        "name": "Syeya",
-        "constellation": "pegaso"
-      },
-      {
-        "id": 2,
-        "name": "Shiryu",
-        "constellation": "Dragon"
-      },
-    
-      {
-        "id": 3,
-        "name": "Hyoga",
-        
-        "constellation": "Cisne"
-      },
-    
-      {
-        "id": 4,
-        "name": "Shun",
-        "constellation": "Andromeda"
-      },
-    
-      {
-        "id": 5,
-        "name": "Ikki",
-        "constellation": "Fenix"
-      }  
-    ]
+  "santos": [
+    {
+      "ID": 1,
+      "PrimerApellido": "juana",
+      "SegundoApellido": "arco",
+      "PrimerNombre": "mendeliev",
+      "OtroNombre": "carton",
+      "PaisDelEmpleo": "de colo",
+      "TipoIdentificacion": "cc",
+      "NumeroIdentifiacion": "450504",
+      "CorreoElectronico": "d@gmail.com",
+      "FechaIngreso": "2021-01-01",
+      "FeachaRegistro": "2021-01-01",
+      "Area": "programacion",
+      "Estado": "Activo"
+    }
+  ]
 }

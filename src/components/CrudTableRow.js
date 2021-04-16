@@ -1,16 +1,24 @@
-import React from 'react'
+import React from "react";
 
-
-export default function CrudTableRow({el,setDataToEdit, deleteData}) {
-    const {name, constellation, id} = el
-    return (
-      <tr>
-        <td>{name}</td>
-        <td>{constellation}</td>
-        <td>
-          <button onClick={()=> setDataToEdit(el)}> Editar</button>
-          <button onClick={()=> deleteData(id)}> Elimiar</button>          
-        </td>
-      </tr>
-    )
+export default function CrudTableRow({ el, setDataToEdit, deleteData }) {
+  return (
+    <tr>
+      <td>{el.PrimerApellido}</td>
+      <td>{el.SegundoApellido}</td>
+      <td>{el.PrimerNombre}</td>
+      <td>{el.OtroNombre}</td>
+      <td>{el.PaisDelEmpleo}</td>
+      <td>{el.TipoIdentificacion}</td>
+      <td>{el.NumeroIdentifiacion}</td>
+      <td>{el.CorreoElectronico}</td>
+      <td>{el.FechaIngreso}</td>
+      <td>{el.FeachaRegistro}</td>
+      <td>{el.Area}</td>
+      <td>{el.Estado}</td>
+      <td>
+        <button onClick={() => setDataToEdit(el)}> Editar</button>
+        <button onClick={() => deleteData(el.id)}> Elimiar</button>
+      </td>
+    </tr>
+  );
 }
