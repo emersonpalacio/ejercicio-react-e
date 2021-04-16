@@ -41,10 +41,22 @@ export default function CrudForm({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // if (!form.PrimerApellido) {
-    //   alert("datos incompletos");
-    //   return;
-    // }
+    if (
+      !form.PrimerApellido ||
+      !form.SegundoApellido ||
+      !form.PrimerNombre ||
+      !form.OtroNombre ||
+      !form.PaisDelEmpleo ||
+      !form.TipoIdentificacion ||
+      !form.NumeroIdentifiacion ||
+      !form.CorreoElectronico ||
+      !form.FechaIngreso ||
+      !form.FeachaRegistro ||
+      !form.Area
+    ) {
+      alert("datos incompletos");
+      return;
+    }
     if (form.id === null) {
       createData(form);
     } else {

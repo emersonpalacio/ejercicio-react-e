@@ -35,13 +35,13 @@ const CrudApi = () => {
 
   const createData = (data) => {
     data.id = Date.now();
-    console.log(data);
+    //console.log(data);
     let options = {
       body: data,
       headers: { "content-type": "application/json" },
     };
     api.post(url, options).then((res) => {
-      console.log(res);
+      //console.log(res);
       if (!res.err) {
         setDb([...db, res]);
       } else {
