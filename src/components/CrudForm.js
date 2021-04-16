@@ -63,7 +63,7 @@ export default function CrudForm({
     <div>
       <h3>{dataToEdit ? "Editar" : "Agregar"}</h3>
       <form onSubmit={handleSubmit}>
-        <input type="submit" bvalue="Enviar" />
+        <input type="submit" value="Enviar" />
         <input type="reset" value="Limpiar" onClick={handleReset} />
 
         <input
