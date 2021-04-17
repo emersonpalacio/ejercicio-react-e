@@ -75,6 +75,7 @@ const CrudApi = () => {
 
     if (isDelete) {
       let endPoint = `${url}/${id}`;
+      console.log(endPoint);
       let options = {
         headers: { "content-type": "application/json" },
       };
