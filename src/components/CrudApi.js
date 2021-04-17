@@ -52,6 +52,7 @@ const CrudApi = () => {
 
   const updateData = (data) => {
     let endPoint = `${url}/${data.id}`;
+    console.loo(data.id);
 
     //console.log(endPoint);
     let options = {
@@ -75,6 +76,7 @@ const CrudApi = () => {
 
     if (isDelete) {
       let endPoint = `${url}/${id}`;
+      console.log(endPoint);
       let options = {
         headers: { "content-type": "application/json" },
       };

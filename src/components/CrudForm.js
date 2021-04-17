@@ -11,7 +11,7 @@ const initialForm = {
   NumeroIdentifiacion: "",
   CorreoElectronico: "",
   FechaIngreso: "",
-  FeachaRegistro: "",
+  FechaRegistro: "",
   Area: "",
   Estado: "",
 };
@@ -21,6 +21,7 @@ export default function CrudForm({
   updateData,
   dataToEdit,
   setDataToEdit,
+  el,
 }) {
   const [form, setForm] = useState(initialForm);
 
@@ -47,11 +48,11 @@ export default function CrudForm({
       !form.PrimerNombre ||
       !form.OtroNombre ||
       !form.PaisDelEmpleo ||
-      !form.TipoIdentificacion ||
+      !form.NumeroIdentifiacion ||
       !form.NumeroIdentifiacion ||
       !form.CorreoElectronico ||
       !form.FechaIngreso ||
-      !form.FeachaRegistro ||
+      !form.FechaRegistro ||
       !form.Area
     ) {
       alert("datos incompletos");
@@ -110,21 +111,31 @@ export default function CrudForm({
           placeholder="Otro Nombre"
         />
 
-        <input
+        <select
           onChange={handleChange}
           value={form.PaisDelEmpleo}
           type="text"
           name="PaisDelEmpleo"
           placeholder="País Del Empleo"
-        />
+        >
+          <option>Opsión obligatoria *</option>
+          <option>Colombia</option>
+          <option>Estados unidos</option>
+        </select>
 
-        <input
+        <select
           onChange={handleChange}
           value={form.TipoIdentificacion}
           type="text"
           name="TipoIdentificacion"
           placeholder="Tipo de identificación"
-        />
+        >
+          <option>Opsión obligatoria *</option>
+          <option>Cédula de Ciudadanía</option>
+          <option>Cédula de Extranjería</option>
+          <option>Pasaporte</option>
+          <option>Permiso Especial</option>
+        </select>
 
         <input
           onChange={handleChange}
@@ -152,26 +163,36 @@ export default function CrudForm({
 
         <input
           onChange={handleChange}
-          value={form.FeachaRegistro}
+          value={form.FechaRegistro}
           type="text"
-          name="FeachaRegistro"
+          name="FechaRegistro"
           placeholder="Fecha Registro"
         />
 
-        <input
+        <select
           onChange={handleChange}
           value={form.Area}
           type="text"
           name="Area"
           placeholder="Área"
-        />
+        >
+          <option>Opsión obligatoria *</option>
+          <option>Administración</option>
+          <option>Financiera</option>
+          <option>Compras</option>
+          <option>Infraestructura</option>
+          <option>Operación</option>
+          <option>Talento Humano</option>
+          <option>Servicios Varios</option>
+        </select>
 
         <input
           onChange={handleChange}
           value={form.Estado}
           type="text"
           name="Estado"
-          placeholder="Estado"
+          placeholder="Activo"
+          //disabled="true"
         />
       </form>
     </div>

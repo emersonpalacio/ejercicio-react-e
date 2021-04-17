@@ -12,11 +12,12 @@ export default function CrudTableRow({ el, setDataToEdit, deleteData }) {
       <td>{el.NumeroIdentifiacion}</td>
       <td>{el.CorreoElectronico}</td>
       <td>{el.FechaIngreso}</td>
-      <td>{el.FeachaRegistro}</td>
+      <td>{el.FechaRegistro}</td>
       <td>{el.Area}</td>
       <td>{el.Estado}</td>
       <td>
         <button onClick={() => setDataToEdit(el)}> Editar</button>
+
         <button onClick={() => deleteData(el.id)}> Elimiar</button>
       </td>
     </tr>
