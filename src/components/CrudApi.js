@@ -13,7 +13,7 @@ const CrudApi = () => {
   const [loading, setLoading] = useState(false);
 
   let api = helpHttp();
-  let url = " http://localhost:5000/santos"; //mi enpoint
+  let url = "http://localhost:8000/santos"; //mi enpoint
 
   //se ejecuta la primera vez unicamente
   useEffect(() => {
@@ -41,7 +41,7 @@ const CrudApi = () => {
       headers: { "content-type": "application/json" },
     };
     api.post(url, options).then((res) => {
-      console.log(res);
+      //console.log(res);
       if (!res.err) {
         setDb([...db, res]);
       } else {
