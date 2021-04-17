@@ -115,7 +115,7 @@ export default function CrudForm({
           value={form.PaisDelEmpleo}
           type="text"
           name="PaisDelEmpleo"
-          placeholder="Pais Del Empleo"
+          placeholder="País Del Empleo"
         />
 
         <input
@@ -123,7 +123,7 @@ export default function CrudForm({
           value={form.TipoIdentificacion}
           type="text"
           name="TipoIdentificacion"
-          placeholder="Tipo de identificacion"
+          placeholder="Tipo de identificación"
         />
 
         <input
@@ -131,7 +131,7 @@ export default function CrudForm({
           value={form.NumeroIdentifiacion}
           type="text"
           name="NumeroIdentifiacion"
-          placeholder="Numero Identifiacion"
+          placeholder="Numero Identifiación"
         />
 
         <input
@@ -139,7 +139,7 @@ export default function CrudForm({
           value={form.CorreoElectronico}
           type="text"
           name="CorreoElectronico"
-          placeholder="Correo Electronico"
+          placeholder="Correo Electrónico"
         />
 
         <input
@@ -155,7 +155,7 @@ export default function CrudForm({
           value={form.FeachaRegistro}
           type="text"
           name="FeachaRegistro"
-          placeholder="Feacha Registro"
+          placeholder="Fecha Registro"
         />
 
         <input
@@ -163,7 +163,15 @@ export default function CrudForm({
           value={form.Area}
           type="text"
           name="Area"
-          placeholder="Area"
+          placeholder="Área"
+        />
+
+        <input
+          onChange={handleChange}
+          value={form.Area}
+          type="text"
+          name="Estado"
+          placeholder="Estado"
         />
       </form>
     </div>

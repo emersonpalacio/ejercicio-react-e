@@ -59,7 +59,7 @@ const CrudApi = () => {
       headers: { "content-type": "application/json" },
     };
     api.put(endPoint, options).then((res) => {
-      //console.log(res);
+      console.log(res);
       if (!res.err) {
         let newData = db.map((el) => (el.id === data.id ? data : el));
         setDb(newData);

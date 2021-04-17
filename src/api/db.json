@@ -29,6 +29,36 @@
       "FeachaRegistro": "asdfas",
       "Area": "asfd",
       "Estado": ""
+    },
+    {
+      "id": 1618617809229,
+      "PrimerApellido": "asdf",
+      "SegundoApellido": "asdf",
+      "PrimerNombre": "asdf",
+      "OtroNombre": "asdf",
+      "PaisDelEmpleo": "asdf",
+      "TipoIdentificacion": "asd",
+      "NumeroIdentifiacion": "asdf",
+      "CorreoElectronico": "asdf",
+      "FechaIngreso": "asd",
+      "FeachaRegistro": "asd",
+      "Area": "asdf",
+      "Estado": ""
+    },
+    {
+      "id": 1618655951520,
+      "PrimerApellido": "jk",
+      "SegundoApellido": "hb",
+      "PrimerNombre": "jhg",
+      "OtroNombre": "jb",
+      "PaisDelEmpleo": "n",
+      "TipoIdentificacion": "n",
+      "NumeroIdentifiacion": "n",
+      "CorreoElectronico": "n",
+      "FechaIngreso": "n",
+      "FeachaRegistro": "n",
+      "Area": "n",
+      "Estado": ""
     }
   ]
 }
