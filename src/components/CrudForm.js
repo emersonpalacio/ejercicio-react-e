@@ -85,6 +85,7 @@ export default function CrudForm({
           type="text"
           name="PrimerApellido"
           placeholder="Primer Apellido"
+          id="apellido"
         />
 
         <input
@@ -101,6 +102,7 @@ export default function CrudForm({
           type="text"
           name="PrimerNombre"
           placeholder="Primer Nombre"
+          id="nombre"
         />
 
         <input
@@ -142,16 +144,23 @@ export default function CrudForm({
           value={form.NumeroIdentifiacion}
           type="text"
           name="NumeroIdentifiacion"
-          placeholder="Numero Identifiación"
+          placeholder="Numero Identificación"
         />
 
         <input
           onChange={handleChange}
           value={form.CorreoElectronico}
-          type="text"
+          type="email"
           name="CorreoElectronico"
           placeholder="Correo Electrónico"
+          id="correo"
         />
+
+        {function PasarValor() {
+          document.getElementById("nombre2").value = document.getElementById(
+            "nombre1"
+          ).value;
+        }}
 
         <input
           onChange={handleChange}
@@ -186,14 +195,18 @@ export default function CrudForm({
           <option>Servicios Varios</option>
         </select>
 
-        <input
+        <select
           onChange={handleChange}
           value={form.Estado}
           type="text"
           name="Estado"
           placeholder="Activo"
-          //disabled="true"
-        />
+          disabled="true"
+        >
+          <option selected value="true">
+            Activo
+          </option>
+        </select>
       </form>
     </div>
   );

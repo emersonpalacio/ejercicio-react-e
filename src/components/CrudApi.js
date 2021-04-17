@@ -52,7 +52,6 @@ const CrudApi = () => {
 
   const updateData = (data) => {
     let endPoint = `${url}/${data.id}`;
-    console.loo(data.id);
 
     //console.log(endPoint);
     let options = {
