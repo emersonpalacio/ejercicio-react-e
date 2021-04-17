@@ -95,7 +95,7 @@ const CrudApi = () => {
   return (
     <div>
       <article>
-        <h2>Crud API</h2>
+        <h1>Creación de regsitros</h1>
         <CrudForm
           createData={createData}
           updateData={updateData}
