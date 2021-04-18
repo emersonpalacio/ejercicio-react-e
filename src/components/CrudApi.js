@@ -43,6 +43,7 @@ const CrudApi = () => {
     api.post(url, options).then((res) => {
       //console.log(res);
       if (!res.err) {
+        console.log("desde el post");
         setDb([...db, res]);
       } else {
         setError(res);
@@ -63,6 +64,7 @@ const CrudApi = () => {
       if (!res.err) {
         let newData = db.map((el) => (el.id === data.id ? data : el));
         setDb(newData);
+        console.log("desde el put");
       } else {
         setError(res);
       }
@@ -96,7 +98,6 @@ const CrudApi = () => {
   return (
     <div>
       <article>
-        <h1>Creación de regsitros</h1>
         <CrudForm
           createData={createData}
           updateData={updateData}
