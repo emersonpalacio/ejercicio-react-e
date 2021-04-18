@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaMapMarked, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
 
 const initialForm = {
   id: null,
@@ -73,141 +74,163 @@ export default function CrudForm({
   };
 
   return (
-    <div>
-      <h1>{dataToEdit ? "Editando Registros" : "Agregar Resgistros"}</h1>
-      <form onSubmit={handleSubmit}>
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Limpiar" onClick={handleReset} />
+    <div className="div-form-container">
+      <h1>{dataToEdit ? "Editando Registros" : "Agregar Registros"}</h1>
 
-        <input
-          onChange={handleChange}
-          value={form.PrimerApellido}
-          type="text"
-          name="PrimerApellido"
-          placeholder="Primer Apellido"
-          id="apellido"
-        />
+      <div className="form-container">
+        <form onSubmit={handleSubmit}>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpiar" onClick={handleReset} />
 
-        <input
-          onChange={handleChange}
-          value={form.SegundoApellido}
-          type="text"
-          name="SegundoApellido"
-          placeholder="Segundo Apellido"
-        />
+          <input
+            onChange={handleChange}
+            value={form.PrimerApellido}
+            type="text"
+            name="PrimerApellido"
+            placeholder="Primer Apellido"
+            id="apellido"
+          />
 
-        <input
-          onChange={handleChange}
-          value={form.PrimerNombre}
-          type="text"
-          name="PrimerNombre"
-          placeholder="Primer Nombre"
-          id="nombre"
-        />
+          <input
+            onChange={handleChange}
+            value={form.SegundoApellido}
+            type="text"
+            name="SegundoApellido"
+            placeholder="Segundo Apellido"
+          />
 
-        <input
-          onChange={handleChange}
-          value={form.OtroNombre}
-          type="text"
-          name="OtroNombre"
-          placeholder="Otro Nombre"
-        />
+          <input
+            onChange={handleChange}
+            value={form.PrimerNombre}
+            type="text"
+            name="PrimerNombre"
+            placeholder="Primer Nombre"
+            id="nombre"
+          />
 
-        <select
-          onChange={handleChange}
-          value={form.PaisDelEmpleo}
-          type="text"
-          name="PaisDelEmpleo"
-          placeholder="País Del Empleo"
-        >
-          <option>Opsión obligatoria *</option>
-          <option>Colombia</option>
-          <option>Estados unidos</option>
-        </select>
+          <input
+            onChange={handleChange}
+            value={form.OtroNombre}
+            type="text"
+            name="OtroNombre"
+            placeholder="Otro Nombre"
+          />
 
-        <select
-          onChange={handleChange}
-          value={form.TipoIdentificacion}
-          type="text"
-          name="TipoIdentificacion"
-          placeholder="Tipo de identificación"
-        >
-          <option>Opsión obligatoria *</option>
-          <option>Cédula de Ciudadanía</option>
-          <option>Cédula de Extranjería</option>
-          <option>Pasaporte</option>
-          <option>Permiso Especial</option>
-        </select>
+          <select
+            onChange={handleChange}
+            value={form.PaisDelEmpleo}
+            type="text"
+            name="PaisDelEmpleo"
+            placeholder="País Del Empleo"
+          >
+            <option>Opsión obligatoria *</option>
+            <option>Colombia</option>
+            <option>Estados unidos</option>
+          </select>
 
-        <input
-          onChange={handleChange}
-          value={form.NumeroIdentifiacion}
-          type="text"
-          name="NumeroIdentifiacion"
-          placeholder="Numero Identificación"
-        />
+          <select
+            onChange={handleChange}
+            value={form.TipoIdentificacion}
+            type="text"
+            name="TipoIdentificacion"
+            placeholder="Tipo de identificación"
+          >
+            <option>Opsión obligatoria *</option>
+            <option>Cédula de Ciudadanía</option>
+            <option>Cédula de Extranjería</option>
+            <option>Pasaporte</option>
+            <option>Permiso Especial</option>
+          </select>
 
-        <input
-          onChange={handleChange}
-          value={form.CorreoElectronico}
-          type="email"
-          name="CorreoElectronico"
-          placeholder="Correo Electrónico"
-          id="correo"
-        />
+          <input
+            onChange={handleChange}
+            value={form.NumeroIdentifiacion}
+            type="text"
+            name="NumeroIdentifiacion"
+            placeholder="Numero Identificación"
+          />
 
-        {function PasarValor() {
-          document.getElementById("nombre2").value = document.getElementById(
-            "nombre1"
-          ).value;
-        }}
+          <input
+            onChange={handleChange}
+            value={form.CorreoElectronico}
+            type="email"
+            name="CorreoElectronico"
+            placeholder="Correo Electrónico"
+            id="correo"
+          />
 
-        <input
-          onChange={handleChange}
-          value={form.FechaIngreso}
-          type="text"
-          name="FechaIngreso"
-          placeholder="Fecha Ingreso "
-        />
+          {function PasarValor() {
+            document.getElementById("nombre2").value = document.getElementById(
+              "nombre1"
+            ).value;
+          }}
 
-        <input
-          onChange={handleChange}
-          value={form.FechaRegistro}
-          type="text"
-          name="FechaRegistro"
-          placeholder="Fecha Registro"
-        />
+          <input
+            onChange={handleChange}
+            value={form.FechaIngreso}
+            type="text"
+            name="FechaIngreso"
+            placeholder="Fecha Ingreso "
+          />
 
-        <select
-          onChange={handleChange}
-          value={form.Area}
-          type="text"
-          name="Area"
-          placeholder="Área"
-        >
-          <option>Opsión obligatoria *</option>
-          <option>Administración</option>
-          <option>Financiera</option>
-          <option>Compras</option>
-          <option>Infraestructura</option>
-          <option>Operación</option>
-          <option>Talento Humano</option>
-          <option>Servicios Varios</option>
-        </select>
+          <input
+            onChange={handleChange}
+            value={form.FechaRegistro}
+            type="text"
+            name="FechaRegistro"
+            placeholder="Fecha Registro"
+          />
 
-        <select
-          onChange={handleChange}
-          value={form.Estado}
-          type="text"
-          name="Estado"
-          placeholder="Activo"
-          disabled="true"
-        >
-          <option selected value="true">
-            Activo
-          </option>
-        </select>
-      </form>
+          <select
+            onChange={handleChange}
+            value={form.Area}
+            type="text"
+            name="Area"
+            placeholder="Área"
+          >
+            <option>Opsión obligatoria *</option>
+            <option>Administración</option>
+            <option>Financiera</option>
+            <option>Compras</option>
+            <option>Infraestructura</option>
+            <option>Operación</option>
+            <option>Talento Humano</option>
+            <option>Servicios Varios</option>
+          </select>
+
+          <select
+            onChange={handleChange}
+            value={form.Estado}
+            type="text"
+            name="Estado"
+            placeholder="Activo"
+            disabled="true"
+          >
+            <option selected value="true">
+              Activo
+            </option>
+          </select>
+        </form>
+
+        <div className="contact-info">
+          <ul>
+            <li>
+              <FaMapMarked />
+              sixtandev@gmail.com
+            </li>
+            <li>(57)314-895-17-56</li>
+            <p> Iam Emmanuel Palacio Gaviria.</p>
+            <p>
+              I'm a passionate and creative full-stack developer from Colombia
+              🇨🇴 I am a person who likes to work in a team a lot, I love to
+              learn new things every day, I am very passionate about everything
+              related to operating systems and low-level. 😍🥰🧡
+            </p>
+            <p>I hope some day understand the kernel 🧠</p>
+            <p>Development full stack</p>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

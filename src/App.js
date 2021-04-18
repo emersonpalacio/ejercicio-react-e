@@ -1,6 +1,4 @@
 import React from "react";
-import CrudApi from "./components/CrudApi";
-import DataSearch from "./components/DataSearch";
 import Login from "./pages/login/Login";
 
 function App() {

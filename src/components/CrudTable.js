@@ -9,19 +9,19 @@ export default function CrudTable({ data, setDataToEdit, deleteData }) {
       <table>
         <thead>
           <tr>
-            {/* <th>PrimerApellido</th>
-            <th>SegundoApellido</th>
-            <th>PrimerNombre</th>
-            <th>OtroNombre</th>
-            <th>PaisDelEmpleo</th>
-            <th>TipoIdentificacion</th>
-            <th>NumeroIdentifiacion</th>
-            <th>CorreoElectronico</th>
-            <th>FechaIngreso</th>
-            <th>FeachaRegistro</th>
+            <th>P.Apel</th>
+            <th>S.pell</th>
+            <th>P.Nom</th>
+            <th>S.Nom</th>
+            <th>Pais</th>
+            <th>T.Iden</th>
+            <th>N.Iden</th>
+            <th>Correo</th>
+            <th>F.Ingr</th>
+            <th>F.Regi</th>
             <th>Area</th>
             <th>Estado</th>
-            <th>Acciones</th> */}
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
