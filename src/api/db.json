@@ -29,21 +29,6 @@
       "FechaRegistro": "4333",
       "Area": "Administración",
       "Estado": ""
-    },
-    {
-      "id": 1618696015454,
-      "PrimerApellido": "emerson",
-      "SegundoApellido": "palacio",
-      "PrimerNombre": "emerson",
-      "OtroNombre": "otalvaro",
-      "PaisDelEmpleo": "Colombia",
-      "TipoIdentificacion": "Cédula de Ciudadanía",
-      "NumeroIdentifiacion": "8014687",
-      "CorreoElectronico": "emerson@gmail.com",
-      "FechaIngreso": "31234",
-      "FechaRegistro": "12343",
-      "Area": "Administración",
-      "Estado": ""
     }
   ]
 }
