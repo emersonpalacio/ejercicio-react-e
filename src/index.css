@@ -154,6 +154,7 @@ button {
   color: honeydew;
   margin-bottom: 0px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .submit-button-container {
@@ -162,6 +163,7 @@ button {
   align-items: center;
   margin-top: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .submit-button {
@@ -174,9 +176,11 @@ button {
   color: white;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 }
 .submit-button:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .label-error {
@@ -219,4 +223,15 @@ button {
 
 ::placeholder {
   color: #fff;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
