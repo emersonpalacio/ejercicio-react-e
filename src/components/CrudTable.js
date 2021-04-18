@@ -21,7 +21,7 @@ export default function CrudTable({ data, setDataToEdit, deleteData }) {
             <th>F.Regi</th>
             <th>Area</th>
             <th>Estado</th>
-            <th>Acciones</th>
+            <th>Accion</th>
           </tr>
         </thead>
         <tbody>
