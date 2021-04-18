@@ -24,6 +24,8 @@ const CrudApi = () => {
         console.log(res);
         if (!res.err) {
           setDb(res);
+          console.log(res);
+
           setError(null);
         } else {
           setDb(null);

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaMapMarked, FaEnvelopeOpen, FaPhone } from "react-icons/fa";
 
+
 const initialForm = {
   id: null,
   PrimerApellido: "",
@@ -72,6 +73,7 @@ export default function CrudForm({
     setForm(initialForm);
     setDataToEdit(null);
   };
+  
 
   return (
     <div className="div-form-container">
@@ -79,7 +81,11 @@ export default function CrudForm({
 
       <div className="form-container">
         <form onSubmit={handleSubmit}>
-          <input type="submit" value="Enviar" />
+          <input
+            type="submit"
+            value="Enviar"          
+            
+          />
           <input type="reset" value="Limpiar" onClick={handleReset} />
 
           <input
