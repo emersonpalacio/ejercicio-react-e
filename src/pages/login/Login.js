@@ -3,8 +3,8 @@ import Title from "../login/components/Title/Title";
 import Label from "../login/components/Label/Label";
 import Input from "../login/components/Input/Input";
 
-import "./Login.css";
 import CrudApi from "../../components/CrudApi";
+import "../../index.css";
 
 export default function Login() {
   const [user, setUser] = useState("");
